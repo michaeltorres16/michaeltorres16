@@ -38,14 +38,14 @@
     <div id ="myvg">
     <script>
         const mySpec={
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url":"https://raw.githubusercontent.com/michaeltorres16/michaeltorres16/main/building_inventory.csv"},
-  "title": "Mean of Sq. Footage by Building Usage",
-  "mark": "bar",
-  "encoding": {
-    "x": {"field": "Usage Description", "type": "ordinal","sort":"-y","axis":{"labelAngle":-50}},
-    "y": {"aggregate": "mean", "field": "Square Footage"}
-  }
+                      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                      "data": {"url":"https://raw.githubusercontent.com/michaeltorres16/michaeltorres16/main/building_inventory.csv"},
+                      "title": "Mean of Sq. Footage by Building Usage",
+                      "mark": "bar",
+                      "encoding": {
+                        "x": {"field": "Usage Description", "type": "ordinal","sort":"-y","axis":{"labelAngle":-50}},
+                        "y": {"aggregate": "mean", "field": "Square Footage"}
+                      }
 };
 
         vegaEmbed('#myviz',mySpec);
