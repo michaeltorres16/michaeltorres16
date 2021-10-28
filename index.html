@@ -6,23 +6,31 @@
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
        body {
-            background-color:#e8edea;  
+            background-color:#e8edea;
+        }
+        #myviz {
+            margin: auto; 
         }
     </style>
         
     </head>
     
     <body>
+        <h1>
+        Data Viz
+        </h1>
+        <h5>
+        IS 445   
+        </h5>
         <p>
-        Lorem Ipsum Dolor set et
+        Michael Torres  
         </p>
-        <p>
-        Lorem Ipsum Dolor set et x2   
-        </p>
+        
         <div id="myviz">
         </div>
                 
     </body>
+    <div id ="myvg">
     <script>
         const mySpec={
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -37,4 +45,5 @@
 
         vegaEmbed('#myviz',mySpec);
     </script>
+    </div>
 </html>
